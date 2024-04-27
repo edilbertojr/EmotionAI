@@ -10,10 +10,12 @@ st.set_page_config(
 )
 
 st.markdown(
-    body = "# <center>EmotionAI</center>",
+    body = "# <center>EmotionAI: Sentiment Analysis with Fine-Tuned DistilBERT</center>",
     unsafe_allow_html = True
 )
-st.caption("Fine-Tuned with DistilBERT Transformers for optimal performance. Capable of distinguishing between six emotions: `Joy`, `Sadness`, `Anger`, `Fear`, `Love`, `Surprise`")
+st.caption("EmotionAI is a powerful web application that leverages machine learning to perform real-time sentiment analysis on text data. At its core, EmotionAI utilizes a fine-tuned DistilBERT model, a lightweight variant of the popular BERT architecture, to accurately classify emotions conveyed in natural language inputs.")
+st.caption("Trained on a custom dataset, the DistilBERT model achieved an impressive 92% accuracy in emotion classification, demonstrating its capability to understand and interpret the nuances of human emotions expressed through text. The model was fine-tuned using Hugging Face's transformers, datasets, and evaluate libraries, ensuring seamless integration with state-of-the-art natural language processing (NLP) tools.")
+st.caption("The application's user-friendly interface, built with Streamlit, allows users to effortlessly input text and receive real-time emotion predictions. EmotionAI's intuitive design and responsive feedback make it an invaluable tool for sentiment analysis tasks, enabling users to gain valuable insights into the emotional tone of their textual data. Capable of distinguishing between six emotions: `Joy`, `Sadness`, `Anger`, `Fear`, `Love`, `Surprise`")
 
 text_input = st.text_area(
     label = "Provide your text.",
